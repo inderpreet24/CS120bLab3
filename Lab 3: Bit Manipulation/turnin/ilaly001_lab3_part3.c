@@ -49,7 +49,7 @@ int main(void) {
      if(tempA <= 4 ) {
       tempC = tempC | 0x40;
      }
-    tempA = tempA & 0x70;
+    tempA = PINA & 0x70;
     if(tempA = 0x30){
          tempC = tempC | 0x80;
      }
