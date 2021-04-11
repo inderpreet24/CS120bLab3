@@ -28,8 +28,8 @@ int main(void) {
     /* Insert your solution below */
     while (1) {
  	tempD = PIND;
-        tempB = PINB * 0x01; 
-  	totalVal2 = totalVal2 << 1;
+        tempB = PINB + 0x01; 
+  	totalVal2 = tempD << 1;
      totalVal2 = totalVal2 + tempB;
 	if(totalVal2 >= 70) {
       tempB = 0x02;         
