@@ -24,7 +24,7 @@ int main(void) {
     //unsigned char val2 = 0;
     /* Insert your solution below */
     while (1) {
-      tempA = PINA;
+      tempA = PINA & 0x0F;
       if(tempA == 0x01 || tempA == 0x10) {
         PORTC = 0x20;
 	}
