@@ -18,12 +18,13 @@ int main(void) {
     DDRB = 0x00; PORTB = 0xFF;
     DDRC = 0xFF; PORTC = 0x00;
     unsigned char tempA = 0x00;
-    unsigned char tempB = 0x00;
-    unsigned char count = 0;
-    unsigned char val1 = 0;
-    unsigned char val2 = 0;
+    //unsigned char tempB = 0x00;
+  //  unsigned char count = 0;
+    //unsigned char val1 = 0;
+    //unsigned char val2 = 0;
     /* Insert your solution below */
     while (1) {
+      tempA = PINA;
       if(tempA == 0x01 || tempA == 0x10) {
         PORTC = 0x20;
 	}
