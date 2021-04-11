@@ -50,7 +50,7 @@ int main(void) {
       tempC = tempC | 0x40;
      }
     tempA = PINA & 0x70;
-    if(tempA = 0x30){
+    if(tempA == 0x30){
          tempC = tempC | 0x80;
      }
  PORTC = tempC;
