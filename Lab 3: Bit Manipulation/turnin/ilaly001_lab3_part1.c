@@ -33,7 +33,7 @@ int main(void) {
        if(val1 == 1) {
             count = count + 1;      
     }
-      val2 = ((tempA >> i ) & 0x01);
+      val2 = ((tempB >> i ) & 0x01);
        if(val2 == 1) {
        count = count + 1;
 } 
